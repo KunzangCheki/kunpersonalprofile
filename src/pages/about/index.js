@@ -19,7 +19,7 @@ export const About = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
 
-        {/* Page Title */}
+        {/* ---------- Page Title ---------- */}
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">About Me</h1>
@@ -27,7 +27,7 @@ export const About = () => {
           </Col>
         </Row>
 
-        {/* About Section */}
+        {/* ---------- About Section ---------- */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
@@ -39,7 +39,7 @@ export const About = () => {
           </Col>
         </Row>
 
-        {/* Work Experience */}
+        {/* ---------- Work Experience ---------- */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Work Experience</h3>
@@ -59,7 +59,7 @@ export const About = () => {
           </Col>
         </Row>
 
-        {/* Skills Section */}
+        {/* ---------- Skills Section ---------- */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
@@ -83,6 +83,32 @@ export const About = () => {
                 ))}
               </div>
             ))}
+          </Col>
+        </Row>
+
+        {/* ---------- Certifications Section ---------- */}
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Certifications</h3>
+          </Col>
+          <Col lg="7">
+            <div className="certification">
+              <h5>AWS Academy Cloud Foundations (2024)</h5>
+              <p className="text-muted">
+                Completed the AWS Academy Cloud Foundations course, gaining a
+                comprehensive understanding of fundamental cloud computing
+                concepts. Acquired knowledge in AWS core services, security
+                best practices, cloud architecture, and cost management.
+              </p>
+
+              <h5>Google AI Agent Intensive Course</h5>
+              <p className="text-muted">
+                Completed an in-depth training on Google’s AI Agent frameworks,
+                focusing on building, deploying, and optimizing conversational
+                and generative AI systems. Gained practical exposure to Vertex
+                AI tools, model fine-tuning, and prompt engineering.
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>

@@ -7,6 +7,8 @@ section {
     transition: all .5s ease-in;
 }
 
+
+
 .who_am_I {
     font-family: Cinzel;
 }
@@ -231,4 +233,34 @@ section {
 
 .intro_sec .h_bg-image {
     filter: saturate(0.5);
+}
+
+/* Resume Button (same style family as Portfolio & Contact Me) */
+#button_r {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+#button_r:hover {
+  color: var(--primary-color);
+  box-shadow: 8px 8px 0px var(--text-color), -8px -8px 0px var(--text-color);
+}
+
+#button_r .ring {
+  background: transparent;
+}
+
+#button_r .one {
+  background-color: #000;
+}
+
+#button_r .two {
+  background-color: var(--primary-color);
+}
+
+#button_r .three {
+  background-color: var(--secondary-color);
 }
